@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import Navbar from "../fragments/Navbar"
-import Footer from "../fragments/Footer"
-import Aside from "../fragments/Aside"
+import Navbar from "../Navbar"
+import Footer from "../Footer"
+import Aside from "../Aside"
 
 
-export default function DashboardMainLayout({children}) {
+export default function DashboardMainLayout({ children }) {
     return (
         <section id="container" className="flex flex-col gap-5 w-full h-full p-3">
             <div className="min-h-screen bg-gray-50/50">

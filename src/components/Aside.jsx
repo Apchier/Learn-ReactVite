@@ -1,4 +1,4 @@
-import AsideLink from "../elements/AsideLink";
+import AsideLink from "./elements/AsideLink";
 
 export default function Aside() {
     return (
