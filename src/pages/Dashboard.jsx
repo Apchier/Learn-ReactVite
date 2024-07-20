@@ -1,5 +1,4 @@
 import Badge from "../components/elements/Badge"
-import DashboardMainLayout from "../components/layouts/DashboardMainLayout"
 import { FaMoneyBillWave } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { HiUserPlus } from "react-icons/hi2";
@@ -9,7 +8,7 @@ import { FaSignal } from "react-icons/fa";
 export default function Dashboard() {
     return (
         <section id="container" className="flex flex-col gap-5 w-full h-full p-3">
-            <DashboardMainLayout>
+            <>
                 <div className="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
                     <div className="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
                         <Badge>
@@ -171,7 +170,7 @@ export default function Dashboard() {
                         </div>
                     </div>
                 </div>
-            </DashboardMainLayout>
+            </>
         </section>
     )
 }

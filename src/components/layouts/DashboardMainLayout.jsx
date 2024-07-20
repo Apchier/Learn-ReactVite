@@ -2,9 +2,10 @@
 import Navbar from "../Navbar"
 import Footer from "../Footer"
 import Aside from "../Aside"
+import { Outlet } from "react-router-dom"
 
 
-export default function DashboardMainLayout({ children }) {
+export default function DashboardMainLayout() {
     return (
         <section id="container" className="flex flex-col gap-5 w-full h-full p-3">
             <div className="min-h-screen bg-gray-50/50">
@@ -12,7 +13,7 @@ export default function DashboardMainLayout({ children }) {
                 <div className="p-4 xl:ml-80">
                     <Navbar />
                     <div className="mt-12">
-                        {children}
+                        <Outlet />
                     </div>
                     <div className="text-blue-gray-600">
                         <Footer />

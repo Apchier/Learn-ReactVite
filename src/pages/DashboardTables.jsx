@@ -1,9 +1,13 @@
-import DashboardMainLayout from "../components/layouts/DashboardMainLayout";
+import { Outlet } from "react-router-dom"
+import DashboardTableLayout from "../components/layouts/DashboardTableLayout"
 
 export default function DashboardTables() {
     return (
-        <DashboardMainLayout>
-            <h1>DashboardTables</h1>
-        </DashboardMainLayout>
+        <>
+            <h1>Dashboard Tables</h1>
+            <DashboardTableLayout>
+                <Outlet />
+            </DashboardTableLayout>
+        </>
     )
 }
